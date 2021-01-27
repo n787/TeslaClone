@@ -1,13 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-//import CarItem from './components/CarItem';
-import CarsList from './components/CarsList';
+import { StyleSheet, Text, View } from 'react-native';
+import CarsList from './components/CarItem/CarsList';
+
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-           < CarsList />
+      <CarsList />
     </View>
   );
 }
@@ -18,6 +19,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  
+   // position: "absolute",
+   // top: 20,
+  },  
+ 
 });

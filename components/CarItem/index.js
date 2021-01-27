@@ -1,10 +1,10 @@
 import React from 'react';
 import { Text, View, ImageBackground } from 'react-native';
+import Header from './Header';
 import StyledButton from './StyledButton';
 import styles from './styles';
 
-const CarItem = (props) => {
-
+const CarItem = (props) => { 
     /*name: Model S
     tagline: Starting at $69,420
     image: require("../../assets/images/ModelX.jpeg")
@@ -26,6 +26,10 @@ const CarItem = (props) => {
                     {taglineCTA}
                 </Text>
             </Text>
+            </View>
+
+           <View style={styles.headerContainer}>
+               <Header />
             </View>
 
             <View style={styles.buttonContainer}>
